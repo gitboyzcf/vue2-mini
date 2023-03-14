@@ -11,7 +11,7 @@ export function initState(vm) {
 }
 
 function proxy(vm, target,key){
-  // 将data中的属性代理一份放到vm下 ==== 9
+  // 将data中的属性代理一份放到vm下
   Object.defineProperty(vm,key,{
     get(){
       return vm[target][key];
@@ -35,7 +35,7 @@ function initData(vm) {  // 处理data数据 ==== 6
   observe(data);
 
   
-  
+
   //============== 此部分先不看 根据序号引导来看 
   // 为了方便是vm直接获取_data中的属性 再次代理
   /**

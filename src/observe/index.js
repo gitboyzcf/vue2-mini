@@ -3,7 +3,7 @@ import { ArrayMethods } from "./array"; // ==== 15 -》./array.js
 class Observe {
   constructor(data) {
 
-    // ========！！！
+    // ========！！！ 根据引导去看
     // 对每个对象添加Observe实例
     Object.defineProperty(data,'__ob__',{
       enumerable: false, // 不允许枚举（遍历）
